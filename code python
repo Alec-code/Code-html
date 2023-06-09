@@ -1,0 +1,15 @@
+def get_vowels(mot):
+    nbre_voyelle = 0
+    liste_voyelle = []
+    voyelle = ["a","o","i","e","u"]
+    mot = input("Entrez un mot ")
+    for lettre in mot:
+        for i in range(0, 5):
+            if lettre == voyelle[i]:
+                nbre_voyelle += 1
+                if nbre_voyelle <= len(voyelle):
+                    liste_voyelle.append(voyelle[i])
+                
+    print(nbre_voyelle)
+    print(liste_voyelle)
+get_vowels()
